@@ -60,12 +60,4 @@ const DivContainer = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 20px;
-
-  .msj {
-    margin-bottom: 20px;
-    font-size: 1.5rem;
-    font-style: italic;
-    font-weight: bold;
-    text-align: center;
-  }
 `
