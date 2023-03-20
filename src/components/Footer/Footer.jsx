@@ -19,9 +19,9 @@ const Footer = () => {
                     <h4>INFORMACIÓN</h4>
                     <ul>
                         <li><NavLink to={'/about-us'}><InfoIcon/> Sobre nosotros</NavLink></li>
-                        <li><p><PhoneAndroidIcon/> xxx-xxxx-xxx</p></li>
-                        <li><p><EmailIcon/> starjeans@gmail.com</p></li>
-                        <li><p><AccessTimeIcon/> Horarios de atención: xx:xx</p></li>
+                        <li><p><PhoneAndroidIcon/> +54 9 11 3347-9005</p></li>
+                        <li><p><EmailIcon/> starjeansventas@yahoo.com.ar</p></li>
+                        <li><p><AccessTimeIcon/> Horarios de atención: <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;08:00hs - 16:00hs</p></li>
                         <li><p><PlaceIcon/> Nuestros locales</p></li>
                     </ul>
                 </div>
@@ -38,10 +38,10 @@ const Footer = () => {
                 <div className='divFooter-col'>
                     <h4>TIENDA ONLINE</h4>
                     <ul>
-                        <li><a href="#">watch</a></li>
-                        <li><a href="#">bag</a></li>
-                        <li><a href="#">shoes</a></li>
-                        <li><a href="#">dress</a></li>
+                        <li><a href="#">Conjuntos</a></li>
+                        <li><a href="#">Jeans</a></li>
+                        <li><a href="#">Sobrecamisa</a></li>
+                        <li><a href="#"> </a></li>
                     </ul>
                 </div>
                 <div className='divFooter-col'>

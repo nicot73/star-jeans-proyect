@@ -6,10 +6,10 @@ const Item = ({ product }) => {
 
   return (
       <CardContainer>
-          <img src={product.image1} alt="img" />
+          <img src={product.image[0]} alt="img" />
           <div>
             <h4>{product.title}</h4>
-            <p>Precio: ${product.price}</p>
+            <p>Codigo del producto: {product.price}</p>
             <NavLink to={`/product/${product.id}`}>VER DETALLES</NavLink>
           </div>
       </CardContainer> 
@@ -20,8 +20,8 @@ export default Item;
 
 const CardContainer = styled.div`
   background-color: white;
-  margin: 20px 8px;
-  width: 230;
+  margin: 30px 15px;
+  width: 260px;
   height: 410px;
   border-radius: 1px;
   text-align: center;

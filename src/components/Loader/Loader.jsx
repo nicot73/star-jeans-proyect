@@ -13,6 +13,9 @@ const Loader = () => {
 export default Loader;
 
 const LoaderContainer = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
     margin: 15px;
     .loader {

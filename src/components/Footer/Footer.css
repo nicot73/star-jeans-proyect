@@ -48,6 +48,7 @@ ul{
 }
 .divFooter-col ul li a, .divFooter-col ul li p{
 	font-size: 14px;
+	margin-bottom: 0;
 	color: #ffffff;
 	text-decoration: none;
 	font-weight: 300;
@@ -77,7 +78,7 @@ ul{
 }
 
 /*responsive*/
-@media(max-width: 767px){
+@media(max-width: 990px){
   .divFooter-col{
     width: 50%;
     margin-bottom: 30px;

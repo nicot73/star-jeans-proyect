@@ -7,8 +7,9 @@ const ItemDetail = ({ listProduct }) => {
     <Container>
       <div className='divContainer'>
         <h3>{listProduct.category.toUpperCase()}</h3>
-        <img src={listProduct.image1} alt="img" />
-        <img src={listProduct.image2} alt="img" />
+        {listProduct.image.map((image, index) => {
+          return <img src={image} key={index} alt={`Img ${index}`} />
+        })}
       </div>
       <div className='divContainer'>
         <h4>{listProduct.title}</h4>

@@ -17,10 +17,10 @@ const Navbar = () => {
             <NavContainer>
                 <NavLink to={'/'}><Logotype src={BlackLogoStarJeans}/></NavLink>
                 <div className={`links ${clicked ? 'active' : ''}`}>
-                    <NavLink onClick={handleClick} to={'/category/men'}><span>HOMBRES</span></NavLink>
-                    <NavLink onClick={handleClick} to={'/category/women'}><span>MUJERES</span></NavLink>
-                    <NavLink onClick={handleClick} to={'/about-us'}><span>NOSOTROS</span></NavLink>
-                    <NavLink onClick={handleClick} to={'/contact-us'}><span>CONTACTO</span></NavLink>
+                    <NavLink onClick={handleClick} to={'/category/men'}><span className='isActive'>HOMBRE</span></NavLink>
+                    <NavLink onClick={handleClick} to={'/category/women'}><span className='isActive'>DAMA</span></NavLink>
+                    <NavLink onClick={handleClick} to={'/about-us'}><span className='isActive'>NOSOTROS</span></NavLink>
+                    <NavLink onClick={handleClick} to={'/contact-us'}><span className='isActive'>CONTACTO</span></NavLink>
                 </div>
                 
                 <div className='burger'>
@@ -45,6 +45,7 @@ const NavContainer = styled.nav`
     align-items: center;
     justify-content: space-between;
     font-weight: 600;
+    z-index: 1;
     a {
         text-decoration: none;
         color: #333;
@@ -53,7 +54,11 @@ const NavContainer = styled.nav`
         }
     }
     span:hover {
-            border-bottom: solid 5px #333;  
+        border-bottom: solid 4px #333;  
+    }
+    a.active .isActive {
+        color: #333;
+        border-bottom: solid 4px #333;
     }
     @media (min-width: 768px) {
         div {
@@ -123,7 +128,7 @@ const BgDiv = styled.div`
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1;
+    z-index: 0;
     transition: all .6s ease;
     
     @media(max-width: 768px) {

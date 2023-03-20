@@ -6,7 +6,6 @@ import { db } from '../../firebase/firebase';
 import { getDocs, collection, query, where } from 'firebase/firestore';
 import Loader from '../Loader/Loader';
 
-
 const ItemListContainer = () => {
 
   const [listProducts, setListProducts] = useState([]);
@@ -56,8 +55,5 @@ const ItemListContainer = () => {
 export default ItemListContainer;
 
 const DivContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
+  padding: 30px 20px 45px ;
 `
