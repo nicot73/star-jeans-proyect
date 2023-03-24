@@ -1,0 +1,49 @@
+.mainContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+    padding: 20px;
+}
+.containerDiv {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.containerDiv .imgContainer {
+    width: 320px;
+    height: 450px;
+    margin-bottom: 20px;
+}
+.containerDiv .imgContainer .mainImg {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px rgba(1, 23, 46, 0.6);
+}
+.containerDiv .thumbnailContainer {
+    max-width: 400px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.containerDiv .thumbnailContainer .thumbnail {
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    object-fit: cover;
+    opacity: .7;
+}
+.containerDiv .thumbnailContainer .thumbnail:hover {
+    opacity: 1;
+}
+.activeImage {
+    opacity: 1 !important;
+    box-shadow: 0 5px 5px rgba(1, 23, 46, 0.6);
+}

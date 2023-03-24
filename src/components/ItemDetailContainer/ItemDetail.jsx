@@ -18,7 +18,6 @@ const ItemDetail = ({ listProduct }) => {
         <p className='price'>Precio: ${listProduct.price}</p>
       </div> 
     </Container>
-    
   )
 }
 
@@ -59,23 +58,6 @@ const Container = styled.div`
   .price {
     font-size: 20px;
   }
-
-  .availableStock {
-    margin: 0;
-    color: #38E54D;
-    font-size: 15px;
-    font-weight: bolder;
-    text-shadow: 0 0 5px #9CFF2E, 0 0 5px #9CFF2E, 0 0 5px #9CFF2E;
-  }
-
-  .notAvailableStock {
-    margin: 0;
-    color: #ff0303;
-    font-size: 15px;
-    font-weight: bolder;
-    text-shadow: 0 0 5px #FF1E1E, 0 0 5px #FF1E1E, 0 0 5px #FF1E1E;
-  }
-
   button {
     background-color: #333;
     color: #FF6701;

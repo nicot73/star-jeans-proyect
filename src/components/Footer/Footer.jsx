@@ -22,7 +22,7 @@ const Footer = () => {
                         <li><p><PhoneAndroidIcon/> +54 9 11 3347-9005</p></li>
                         <li><p><EmailIcon/> starjeansventas@yahoo.com.ar</p></li>
                         <li><p><AccessTimeIcon/> Horarios de atención: <br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;08:00hs - 16:00hs</p></li>
-                        <li><p><PlaceIcon/> Nuestros locales</p></li>
+                        <li><NavLink to={'about-us'}><PlaceIcon/> Nuestros locales</NavLink></li>
                     </ul>
                 </div>
                 <div className='divFooter-col'>

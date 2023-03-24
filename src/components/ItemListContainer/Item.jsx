@@ -36,7 +36,7 @@ const CardContainer = styled.div`
     height: 320px;
   }
   h4 {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 14px;
     margin-bottom: 0;
     padding: 10px 10px;

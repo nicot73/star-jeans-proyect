@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import ItemDetail from './ItemDetail';
+//import ItemDetail from './ItemDetail';
+//import ThumbsGalery from './ThumbsGalery';
 import styled from 'styled-components';
 import { useParams } from 'react-router-dom';
 import { db } from '../../firebase/firebase';
 import { doc, getDoc, collection } from 'firebase/firestore';
 import Loader from '../Loader/Loader';
+import ImageSelector from './ImageSelector';
 
 const ItemDetailContainer = () => {
 
@@ -40,7 +42,7 @@ const ItemDetailContainer = () => {
 
   return (
     <DetailContainer>
-      {!loading ? <ItemDetail listProduct={listProduct}/> : <Loader/>}
+      {!loading ? <ImageSelector listProduct={listProduct}/> : <Loader/>}
     </DetailContainer>
   )
 }
