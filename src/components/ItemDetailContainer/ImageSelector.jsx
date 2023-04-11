@@ -16,18 +16,18 @@ const ImageSelector = ({ listProduct }) => {
 
   return (
     <div className='mainContainer'>
-        <div className='containerDiv'>     
-                <div className="imgContainer">
-                    <img src={sliderImage} alt="mainImg" className='mainImg'/>
-                </div>
-                <div className="thumbnailContainer">
-                    {listProduct.image.map((image, i) => {
-                        return <img src={image} key={i} alt={`Img ${i}`} onClick={()=>handleClick(i)} className={`thumbnail ${sliderIndex===i ? 'activeImage' : ''}`}/>
-                    })}
-                </div>   
-        </div>
-        <div className="containerDiv">
-
+        <div className='containerDiv'>
+            <h4>{listProduct.title}</h4>     
+            <div className='imgContainer'>
+                <img src={sliderImage} alt='mainImg' className='mainImg'/>
+            </div>
+            <p><span>COD:</span> {listProduct.code}</p>
+            <p><span>TALLES:</span> {listProduct.sizes}</p>
+            <div className='thumbnailContainer'>
+                    {listProduct.image.map((image, i) => 
+                        <img src={image} key={i} alt={`Img ${i}`} onClick={()=>handleClick(i)} className={`thumbnail ${sliderIndex===i ? 'activeImage' : ''}`}/>
+                    )}     
+            </div> 
         </div>
     </div>
   )

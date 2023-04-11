@@ -1,18 +1,34 @@
 .mainContainer {
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow-y: hidden;
+    overflow-x: hidden;
     padding: 20px;
 }
 .containerDiv {
-    width: 50vw;
-    height: 100vh;
+    width: 100vw;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
+}
+.containerDiv h4, .containerDiv p {
+    padding: 10px;
+    text-align: center;
+}
+.containerDiv h4 {
+    font-weight: bold;
+}
+.containerDiv p span {
+    font-weight: 600;
+}
+.containerDiv .infoContainer {
+    margin: 0;
+    padding: 20px;
+    
 }
 .containerDiv .imgContainer {
     width: 320px;
@@ -26,10 +42,12 @@
     box-shadow: 0 5px 5px rgba(1, 23, 46, 0.6);
 }
 .containerDiv .thumbnailContainer {
-    max-width: 400px;
-    height: 80px;
+    padding: 5px;
+    height: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-y: hidden;
 }
 .containerDiv .thumbnailContainer .thumbnail {
     width: 80px;
@@ -39,6 +57,7 @@
     cursor: pointer;
     object-fit: cover;
     opacity: .7;
+    overflow-x: hidden;
 }
 .containerDiv .thumbnailContainer .thumbnail:hover {
     opacity: 1;

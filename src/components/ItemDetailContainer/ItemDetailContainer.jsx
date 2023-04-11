@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 //import ItemDetail from './ItemDetail';
-//import ThumbsGalery from './ThumbsGalery';
 import styled from 'styled-components';
 import { useParams } from 'react-router-dom';
 import { db } from '../../firebase/firebase';

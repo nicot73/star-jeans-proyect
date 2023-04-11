@@ -38,10 +38,8 @@ const Footer = () => {
                 <div className='divFooter-col'>
                     <h4>TIENDA ONLINE</h4>
                     <ul>
-                        <li><a href="#">Conjuntos</a></li>
                         <li><a href="#">Jeans</a></li>
                         <li><a href="#">Sobrecamisa</a></li>
-                        <li><a href="#"> </a></li>
                     </ul>
                 </div>
                 <div className='divFooter-col'>
@@ -49,7 +47,7 @@ const Footer = () => {
                     <div className='social-links'>
                         <a href="https://www.facebook.com/starjeansoficial/"><FacebookIcon/></a>
                         <a href="https://www.instagram.com/starjeans_arrecifes/"><InstagramIcon/></a>
-                        <a href="https://wa.me/5492478557497"><WhatsAppIcon/></a>
+                        <a href="https://wa.me/5491133479005"><WhatsAppIcon/></a>
                     </div>
                 </div>
             </div>
