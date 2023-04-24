@@ -1,76 +1,42 @@
-import React from 'react';
-import styled from 'styled-components';
+import React, { useState } from 'react';
+import './ImageSelector.css';
 
 const ItemDetail = ({ listProduct }) => {
 
+    const [sliderImage, setSliderImage] = useState(listProduct.image[0]);
+    const [sliderIndex, setSliderIndex] = useState(0);
+
+    const handleClick=(index) => {
+        const slider = listProduct.image[index];
+        const selectIndex = index;
+        setSliderImage(slider);
+        setSliderIndex(selectIndex);
+    }
+
   return (
-    <Container>
-      <div className='divContainer'>
-        <h3>{listProduct.category.toUpperCase()}</h3>
-        {listProduct.image.map((image, index) => {
-          return <img src={image} key={index} alt={`Img ${index}`} />
-        })}
-      </div>
-      <div className='divContainer'>
-        <h4>{listProduct.title}</h4>
-        <p>{listProduct.product}</p>
-        <p>{listProduct.description}</p>
-        <p className='price'>Precio: ${listProduct.price}</p>
-      </div> 
-    </Container>
+    <div className='mainContainer'>
+
+        <div className='imgDivContainer'>  
+            <div className='imgContainer'>
+                <img src={sliderImage} alt='mainImg' className='mainImg'/>
+            </div>
+            <div className='thumbnailContainer'>
+                {listProduct.image.map((image, i) => 
+                    <img src={image} key={i} alt={`Img ${i}`} onClick={()=>handleClick(i)} className={`thumbnail ${sliderIndex===i ? 'activeImage' : ''}`}/>
+                )}     
+            </div>
+        </div>
+        <div className="detailDivContainer">
+            <h4 className='borderBottom'>{listProduct.title}</h4>
+            <p className='borderBottom'><span>DESCRIPCIÓN:</span> {listProduct.description}</p>
+            <p className='borderBottom'><span>COMPOSICIÓN:</span> {listProduct.composition}</p>
+            <p className='borderBottom'><span>REFERENCIA:</span> {listProduct.reference}</p>
+            <p className='borderBottom'><span>COD:</span> {listProduct.code}</p>
+            <p><span>TALLES:</span> {listProduct.sizes}</p>
+        </div>
+
+    </div>
   )
 }
 
-export default ItemDetail;
-
-const Container = styled.div`
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  .divContainer {
-    background-color: white;
-    width: 40%;
-    @media (max-width: 830px) {
-      width: 70%;
-    }
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-    padding: 20px;
-    border: solid 1px #e9e9e9;
-    border-radius: 5px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-  }
-  img {
-    width: 330px;
-    height: 260px;
-    margin: 20px;
-  }
-  h4 {
-    font-weight: 600;
-    font-size: 15px;
-    text-align: center;
-  }
-  .price {
-    font-size: 20px;
-  }
-  button {
-    background-color: #333;
-    color: #FF6701;
-    border: none;
-    margin: 10px;
-    padding: 15px;
-    border-radius: 5px;
-    font-weight: bolder;
-    font-family: 'Montserrat';
-    font-size: 15px;
-  }
-  button:hover {
-    background-color: #FF6701;
-    color: #333;
-  }
-`
+export default ItemDetail

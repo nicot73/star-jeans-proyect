@@ -47,7 +47,7 @@ const ItemListContainer = () => {
 
   return (
     <>
-      <HeaderContainer>
+      <HeaderContainer >
         {category === 'men' && <img src={imageMen} alt="Image1" className='headerImg' />}
         {category === 'women' && <img src={imageWomen} alt="Image2" className='headerImg' />}
       </HeaderContainer>

@@ -9,18 +9,19 @@ const Navbar = () => {
     const [clicked, setClicked] = useState(false);
 
     const handleClick = () => {
-        setClicked(!clicked)
+        setClicked(!clicked);
     }
 
     return (
         <>
             <NavContainer>
-                <NavLink to={'/'}><Logotype src={BlackLogoStarJeans}/></NavLink>
+                <NavLink to={'/'} onClick={handleClick}><Logotype src={BlackLogoStarJeans}/></NavLink>
                 <div className={`links ${clicked ? 'active' : ''}`}>
                     <NavLink onClick={handleClick} to={'/category/men'}><span className='isActive'>HOMBRE</span></NavLink>
                     <NavLink onClick={handleClick} to={'/category/women'}><span className='isActive'>DAMA</span></NavLink>
                     <NavLink onClick={handleClick} to={'/about-us'}><span className='isActive'>NOSOTROS</span></NavLink>
                     <NavLink onClick={handleClick} to={'/contact-us'}><span className='isActive'>CONTACTO</span></NavLink>
+                    <NavLink onClick={handleClick} to={'/wholesale-contact'}><span className='isActive'>MAYORISTA</span></NavLink>
                 </div>
                 
                 <div className='burger'>
@@ -67,6 +68,8 @@ const NavContainer = styled.nav`
             justify-content: center;
             align-items: center;
         }
+    }
+    @media (min-width: 815px) {
         div :nth-child(1) {
             margin-left: 1rem;
         }

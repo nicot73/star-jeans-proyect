@@ -6,50 +6,57 @@
     overflow-x: hidden;
     padding: 20px;
 }
-.containerDiv {
-    width: 100vw;
+.imgDivContainer {
+    width: 50vw;
     height: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 20px;
 }
-.containerDiv h4, .containerDiv p {
-    padding: 10px;
-    text-align: center;
+.detailDivContainer {
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
 }
-.containerDiv h4 {
+.detailDivContainer h4, .detailDivContainer p {
+    padding: 10px;
+    text-align: start;
+}
+.detailDivContainer h4 {
     font-weight: bold;
 }
-.containerDiv p span {
+.detailDivContainer p span {
     font-weight: 600;
 }
-.containerDiv .infoContainer {
+.detailDivContainer .infoContainer {
     margin: 0;
     padding: 20px;
     
 }
-.containerDiv .imgContainer {
-    width: 320px;
-    height: 450px;
+.imgDivContainer .imgContainer {
+    max-width: 320px;
     margin-bottom: 20px;
 }
-.containerDiv .imgContainer .mainImg {
+.imgDivContainer .imgContainer .mainImg {
     width: 100%;
-    height: 100%;
     border-radius: 5px;
     box-shadow: 0 5px 5px rgba(1, 23, 46, 0.6);
 }
-.containerDiv .thumbnailContainer {
+.imgDivContainer .thumbnailContainer {
     padding: 5px;
     height: 100%;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    overflow-y: hidden;
 }
-.containerDiv .thumbnailContainer .thumbnail {
+.imgDivContainer .thumbnailContainer .thumbnail {
     width: 80px;
     height: 80px;
     margin: 5px;
@@ -59,10 +66,33 @@
     opacity: .7;
     overflow-x: hidden;
 }
-.containerDiv .thumbnailContainer .thumbnail:hover {
+.imgDivContainer .thumbnailContainer .thumbnail:hover {
     opacity: 1;
 }
 .activeImage {
     opacity: 1 !important;
     box-shadow: 0 5px 5px rgba(1, 23, 46, 0.6);
+}
+.borderBottom {
+    border-bottom: 2px solid #24262B;
+}
+@media (max-width: 769px) {
+    .mainContainer {
+        flex-direction: column;
+    }
+    .imgDivContainer {
+        width: 100vw;
+    }
+    .imgDivContainer .thumbnailContainer {
+        max-width: 350px;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .detailDivContainer {
+        width: 100vw;
+        align-items: center;
+    }
+    .detailDivContainer h4, .detailDivContainer p {
+        text-align: center;
+    }
 }
