@@ -17,12 +17,12 @@ const WholesaleContact = () => {
                 <ul>
                     <li><p><WhatsAppIcon/> +54 9 11 3347-9005</p></li>
                     <li><p><PhoneAndroidIcon/>Gerente de ventas Gastón Molinari: +54 11 6402-0431</p></li>
-                    <li><p><EmailIcon/> starjeansventas@yahoo.com.ar</p></li>
+                    <li><p><EmailIcon/> starjeansventamayorista@gmail.com</p></li>
                     <li><p><PlaceIcon/> Arrecifes, Buenos Aires, Argentina</p></li>
                 </ul>
             </div>
             <div className="formContainer">
-                <form action="https://formsubmit.co/starjeansventas@yahoo.com.ar" method="POST">
+                <form action="https://formsubmit.co/starjeansventamayorista@gmail.com" method="POST">
                     <h2>CONTACTO MAYORISTA</h2>
                     <div className="formGroup flexWrap">
                         <label htmlFor="nombre">

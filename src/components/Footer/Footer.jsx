@@ -21,7 +21,7 @@ const Footer = () => {
                     <ul>
                         <li><NavLink to={'/about-us'}><InfoIcon/> Sobre nosotros</NavLink></li>
                         <li><p><PhoneAndroidIcon/> +54 9 11 3347-9005</p></li>
-                        <li><p><EmailIcon/> starjeansventas@yahoo.com.ar</p></li>
+                        <li><p><EmailIcon/> starjeansventamayorista@gmail.com</p></li>
                         <li><p><AccessTimeIcon/> Horarios de atención: 08:00hs - 16:00hs</p></li>
                         <li><NavLink to={'/about-us'}><PlaceIcon/> Nuestros locales</NavLink></li>
                     </ul>
