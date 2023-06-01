@@ -97,3 +97,8 @@ form h2 {
         font-size: 5rem;
     }
 }
+@media (max-width: 415px) {
+    .contactInfo {
+        font-size: 14px;
+    }
+}

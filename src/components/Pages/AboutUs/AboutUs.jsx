@@ -35,8 +35,8 @@ const aboutUs = () => {
     <Parallax className='imageParallax' bgImage={Img3} strength={200}>
       <div className='content'>
         <div className='text-box'>
-          <h2 className='borderText'>NUESTROS LOCALES</h2>          
-          <h5 className='borderText'>STAR JEANS ARRECIFES</h5>
+          <h2>NUESTROS LOCALES</h2>          
+          <h5>STAR JEANS ARRECIFES</h5>
           <p>
             Av. Belgrano 237 Arrecifes, Provincia de Buenos Aires, Argentina.
             <br />
@@ -45,7 +45,7 @@ const aboutUs = () => {
             <br />
             <br />
           </p>
-          <h5 className='borderText'>STAR JEANS CAPITÁN SARMIENTO</h5>
+          <h5>STAR JEANS CAPITÁN SARMIENTO</h5>
           <p>
             Av. Rivadavia 784 Capitán Sarmiento, Provincia de Buenos Aires, Argentina.
           </p>

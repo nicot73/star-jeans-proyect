@@ -44,7 +44,7 @@ const WholesaleContact = () => {
                     </div>
                     <div className="formGroup">
                         <label htmlFor="mail">
-                            <input type="text" name='mail' placeholder='MAIL *' required/>
+                            <input type="email" name='email' placeholder='MAIL *' required/>
                         </label>
                     </div>
                     <div className="formGroup">
